@@ -6,17 +6,31 @@ function ExpenseForm() {
   const [enteredAmount, setEnteredAmount] = useState('');
   const [enteredDate, setEnteredDate] = useState('');
   const [enteredTitle, setEnteredTitle] = useState('');
+  // const [userInput, setUserInput] = useState({
+  //   enteredAmount: '',
+  //   enteredDate: '',
+  //   enteredTitle: '',
+  // });
 
   const amountChangeHandler = (event) => {
     setEnteredAmount(event.target.value);
+    // setUserInput((prevState) => {
+    //   return { ...prevState, enteredAmount: event.target.value };
+    // });
   };
 
   const dateChangeHandler = (event) => {
     setEnteredDate(event.target.value);
+    // setUserInput((prevState) => {
+    //   return { ...prevState, enteredDate: event.target.value };
+    // });
   };
 
   const titleChangeHandler = (event) => {
     setEnteredTitle(event.target.value);
+    // setUserInput((prevState) => {
+    //   return { ...prevState, enteredTitle: event.target.value };
+    // });
   };
 
   return (
